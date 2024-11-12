@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4A47038F2CE2BE760072CA70 /* DeckUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4A47038E2CE2BE760072CA70 /* DeckUI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		4A4703702CE2BD1B0072CA70 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A47038F2CE2BE760072CA70 /* DeckUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = "Build machines";
 			packageProductDependencies = (
+				4A47038E2CE2BE760072CA70 /* DeckUI */,
 			);
 			productName = "Build machines";
 			productReference = 4A47035E2CE2BD1A0072CA70 /* Build machines.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 4A4703552CE2BD1A0072CA70;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4A47038D2CE2BE760072CA70 /* XCRemoteSwiftPackageReference "DeckUI" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4A47035F2CE2BD1A0072CA70 /* Products */;
 			projectDirPath = "";
@@ -401,6 +410,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Show your face";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -428,6 +438,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Show your face";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -549,6 +560,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4A47038D2CE2BE760072CA70 /* XCRemoteSwiftPackageReference "DeckUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/joshdholtz/DeckUI";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4A47038E2CE2BE760072CA70 /* DeckUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A47038D2CE2BE760072CA70 /* XCRemoteSwiftPackageReference "DeckUI" */;
+			productName = DeckUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4A4703562CE2BD1A0072CA70 /* Project object */;
 }
